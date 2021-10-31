@@ -32,6 +32,43 @@ header {
   display: none;
 }
 
+#mobile-menu-container {
+  display: none;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+  justify-content: center;
+  flex-direction: column;
+}
+.menu-shape {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mobile-close-menu {
+  color: #000;
+  font-size: 50px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.img-square {
+  width: 20%;
+  padding: 20px;
+  transform: rotate(45deg);
+}
+
+.img-circle {
+  width: 20%;
+  margin-top: 30px;
+  padding: 20px;
+  transform: rotate(45deg);
+  align-self: flex-end;
+}
+
 #logo {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -412,8 +449,7 @@ textarea {
   align-items: center;
   justify-content: space-around;
   padding: 5vh;
-  filter:
-    invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
+  filter: invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
     brightness(92%) contrast(82%);
 }
 
@@ -447,6 +483,10 @@ textarea {
 
   #desktop-nav {
     display: block;
+  }
+
+  #mobile-menu-container {
+    display: none;
   }
 
   #desktop-nav ul {
