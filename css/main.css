@@ -44,16 +44,21 @@ header {
   flex-direction: column;
 }
 
-.menu-shape {
-  display: flex;
-  justify-content: space-between;
+#mobile-menu-container ul li {
+  text-align: ”left”;
+  border-bottom: 1px solid "grey";
+}
+
+#mobile-menu-container ul li a {
+  color:"#fff5e1#;
 }
 
 #mobile-close-menu {
   color: #000;
-  font-size: 50px;
+  font-size: 30px;
   margin: 20px;
   cursor: pointer;
+  align-self: "self-end";
 }
 
 .img-square {
