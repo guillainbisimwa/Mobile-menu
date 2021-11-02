@@ -27,7 +27,8 @@ header {
   color: white;
 }
 
-#desktop-nav, #desktop-nav ul {
+#desktop-nav,
+#desktop-nav ul {
   display: none;
 }
 
@@ -416,6 +417,37 @@ textarea {
     brightness(92%) contrast(82%);
 }
 
+#mobile-menu-container .mobile-list li {
+  text-align: left;
+  border-bottom: 1px solid grey;
+}
+
+#mobile-menu-container .mobile-list li a {
+  color: #fff5e1;
+}
+
+#mobile-menu-container {
+  display: none;
+  background-color: #3c3a39;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  padding: 20px;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+#mobile-close-menu {
+  align-self: flex-end;
+}
+
+.mobile-list {
+  width: 100%;
+}
+
 @media all and (min-width: 720px) {
   .top-social {
     flex-direction: column;
@@ -448,9 +480,17 @@ textarea {
     display: block;
   }
 
+  #mobile-menu-container {
+    display: none;
+  }
+
   #desktop-nav ul {
     display: flex;
     margin-right: 10vw;
+  }
+
+  .mobile-list {
+    width: 100%;
   }
 
   .nav-link {
